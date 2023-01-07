@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title> Home </title>
+    <link type="text/css" rel="stylesheet" href="mycss1/style1.css">
+    <link type="text/css" rel="stylesheet" href="bootstrapcss/bootstrap.css">
+    <script src="myjs1/scriptjs1.js"></script>
+    <script src="bootstrapjs/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+
+
+<body style="background-image: url(image/FB_IMG_14910293604419344.jpg);background-size: cover;min-width:603px;">
+
+  <div class="card p-5 justify-content-center shadow m-5" style="float:right;width: 500px;border-radius: 10px;box-shadow:  black;">
+  
+    <p class="text-center " style="font-size: 45px;font-family: impact;letter-spacing: 4px;color:rgb(190, 119, 175)">LOGIN FORM</p>
+    <hr>
+    <form action="login.php" method="post" class="mt-2">
+        <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="txtusername" class="form-control">
+        </div>
+        <div class="form-group">
+        <label for="userpassword">Password</label>
+        <input type="password" id="userpassword" name="txtpassword" class="form-control" >
+        </div>
+        <!--<input type="submit" value="LOGIN" name="proseslog" class=" btn btn-primary mt-3 pl-4 pr-4">-->
+        <button class="btn btn-info font-weight-bold" type="submit" name="proseslog"value= "<?php if (isset($_GET['search'])) {echo $_GET['search'];} ?>">SEMUA KELAS</button>
+
+        </div>
+
+    </form>
+<br>
+
+
+
+<h5>REGISTRASI</h5>
+    <form action="reglog.php" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="txtusername">
+        <label for="userpassword">Password</label>
+        <input type="password" id="userpassword" name="txtpassword">
+        <label for="useremail">Email</label>
+        <input type="text" id="useremail" name="txtemail">
+        
+        <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+              <label class="form-check-label" for="invalidCheck3">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+
+        <input type="submit" value="simpan" name="btnsimpan" >
+        
+    </form>
+
+</body>
+</html>

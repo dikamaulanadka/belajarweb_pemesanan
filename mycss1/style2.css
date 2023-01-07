@@ -1,0 +1,12 @@
+.myul {
+    list-style-type: none;
+    padding-left: 5%;
+    margin-left: 10%;
+    border-left: 1px solid goldenrod;
+}
+
+.mybtn {
+    transition: 0.6s ease !important;
+    color:rgb(63, 63, 63) !important;
+}
+
